@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | CoffeeShop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="main-header">
+        <div class="container header-container">
+            <div class="logo">Coffee<span>Shop</span></div>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="ourstory.html">Our Story</a></li>
+                    <li><a href="menu.html" class="active">Menu</a></li>
+                    <li><a href="workshops.html">Workshops</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Menu Section -->
+    <section id="menu" class="section menu">
+        <div class="container">
+            <h2 class="section-title">Our Menu</h2>
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="coffee">Coffee</button>
+                <button class="category-btn" data-category="tea">Tea</button>
+                <button class="category-btn" data-category="pastries">Pastries</button>
+                <button class="category-btn" data-category="breakfast">Breakfast</button>
+            </div>
+            
+            <!-- Coffee Items -->
+            <div class="menu-items" id="coffee-items">
+                <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="https://images.unsplash.com/photo-1497636577773-f1231844b336?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="Cecololais Blend">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <h3>Cecololais Blend</h3>
+                            <span class="menu-item-price">$5.50</span>
+                        </div>
+                        <p>A rich, full-bodied espresso with notes of dark chocolate and caramel.</p>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1735&q=80" alt="Sonic Turtle Latte">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <h3>Sonic Turtle Latte</h3>
+                            <span class="menu-item-price">$6.25</span>
+                        </div>
+                        <p>Our signature latte with caramel, chocolate, and a hint of sea salt.</p>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="https://images.unsplash.com/photo-1511537190424-bbbab87ac5eb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="Bonits Brew">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <h3>Bonits Brew</h3>
+                            <span class="menu-item-price">$4.75</span>
+                        </div>
+                        <p>A smooth, balanced medium roast with floral and citrus notes.</p>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1769&q=80" alt="Chodda Cold Brew">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <h3>Chodda Cold Brew</h3>
+                            <span class="menu-item-price">$5.95</span>
+                        </div>
+                        <p>Slow-steeped for 24 hours with hints of vanilla and cinnamon.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Tea Items -->
+            <div class="menu-items hidden" id="tea-items">
+                <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1064&q=80" alt="Earl Grey Classic">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <h3>Earl Grey Classic</h3>
+                            <span class="menu-item-price">$4.25</span>
+                        </div>
+                        <p>Black tea scented with oil of bergamot, a timeless favorite.</p>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="img/jasmine greeen tea.jpg" alt="Jasmine Green Tea">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <h3>Jasmine Green Tea</h3>
+                            <span class="menu-item-price">$4.75</span>
+                        </div>
+                        <p>Delicate green tea leaves scented with jasmine flowers.</p>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="Chamomile Dream">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <h3>Chamomile Dream</h3>
+                            <span class="menu-item-price">$4.50</span>
+                        </div>
+                        <p>Caffeine-free herbal tea with calming properties and honey notes.</p>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="img/moroccan tea.jpg" alt="Moroccan Mint">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <h3>Moroccan Mint</h3>
+                            <span class="menu-item-price">$5.25</span>
+                        </div>
+                        <p>Green tea with fresh mint leaves, traditionally prepared.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pastries Items -->
+            <div class="menu-items hidden" id="pastries-items">
+                <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="img/croissant.jpg" alt="Croissant">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <h3>Butter Croissant</h3>
+                            <span class="menu-item-price">$3.50</span>
+                        </div>
+                        <p>Flaky, buttery pastry made with pure French butter.</p>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="https://images.unsplash.com/photo-1611293388250-580b08c4a145?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1738&q=80" alt="Chocolate Eclair">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <h3>Chocolate Éclair</h3>
+                            <span class="menu-item-price">$4.75</span>
+                        </div>
+                        <p>Choux pastry filled with vanilla cream and topped with chocolate.</p>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="https://images.unsplash.com/photo-1623334044303-241021148842?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="Blueberry Muffin">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <h3>Blueberry Muffin</h3>
+                            <span class="menu-item-price">$3.25</span>
+                        </div>
+                        <p>Freshly baked muffin bursting with juicy blueberries.</p>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="img/Cinnamon Roll.jpg" alt="Cinnamon Roll">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <h3>Cinnamon Roll</h3>
+                            <span class="menu-item-price">$4.50</span>
+                        </div>
+                        <p>Soft, fluffy pastry with cinnamon swirl and cream cheese icing.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Breakfast Items -->
+            <div class="menu-items hidden" id="breakfast-items">
+                <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="https://images.unsplash.com/photo-1551782450-a2132b4ba21d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1769&q=80" alt="Avocado Toast">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <h3>Avocado Toast</h3>
+                            <span class="menu-item-price">$9.50</span>
+                        </div>
+                        <p>Sourdough toast topped with smashed avocado, cherry tomatoes, and microgreens.</p>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="Breakfast Bowl">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <h3>Acai Breakfast Bowl</h3>
+                            <span class="menu-item-price">$10.75</span>
+                        </div>
+                        <p>Acai blend topped with granola, banana, berries, and honey.</p>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="Breakfast Sandwich">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <h3>Breakfast Sandwich</h3>
+                            <span class="menu-item-price">$8.95</span>
+                        </div>
+                        <p>Croissant with egg, cheddar cheese, and your choice of bacon or sausage.</p>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1547&q=80" alt="French Toast">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <h3>French Toast</h3>
+                            <span class="menu-item-price">$11.25</span>
+                        </div>
+                        <p>Brioche french toast with maple syrup, fresh berries, and powdered sugar.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>CoffeeShop</h3>
+                    <p>Creating excellent kitchen service and premium coffee experiences since 2010.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Hours</h3>
+                    <ul>
+                        <li>Monday - Friday: 7am - 8pm</li>
+                        <li>Saturday: 8am - 9pm</li>
+                        <li>Sunday: 8am - 6pm</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Coffee Street, City</li>
+                        <li><i class="fas fa-phone"></i> (123) 456-7890</li>
+                        <li><i class="fas fa-envelope"></i> info@coffeeshop.com</li>
+                    </ul>
+                </div>
+                
+            <div class="footer-column">
+    <h3>Newsletter</h3>
+    <p>Subscribe to receive updates, exclusive offers, and coffee brewing tips.</p>
+    <form class="newsletter-form" id="newsletterForm">
+        <input type="email" class="newsletter-input" placeholder="Your email address" required>
+        <button type="submit" class="newsletter-btn">Subscribe</button>
+        <div class="newsletter-message" id="newsletterMessage"></div>
+    </form>
+    <div class="newsletter-benefits">
+        <p>By subscribing, you'll receive:</p>
+        <ul>
+            <li>Weekly coffee specials</li>
+            <li>Exclusive discounts</li>
+            <li>Brewing tutorials</li>
+            <li>Event invitations</li>
+        </ul>
+    </div>
+</div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 CoffeeShop. All rights reserved. | Designed with passion for coffee lovers</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
